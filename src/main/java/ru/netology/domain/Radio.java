@@ -9,7 +9,6 @@ public class Radio {
     public void increaseCurrentNumberStation() {
         if (currentNumberStation >= maxNumberStation) {
             currentNumberStation = minNumberStation;
-            return;
         }
         currentNumberStation++;
     }
@@ -17,16 +16,15 @@ public class Radio {
     public void decreaseCurrentNumberStation() {
         if (currentNumberStation <= minNumberStation) {
             currentNumberStation = maxNumberStation;
-            return;
         }
         currentNumberStation--;
     }
 
-    public void setCurrentNumberStation(int currentNumberStation) {
-        this.currentNumberStation = currentNumberStation;
-    }
-
     public int getCurrentNumberStation() {
         return currentNumberStation;
+    }
+
+    public void setCurrentNumberStation(int currentNumberStation) {
+        this.currentNumberStation = currentNumberStation;
     }
 }

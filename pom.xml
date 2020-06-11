@@ -65,8 +65,8 @@
                             <limits>
                                 <limit>
                                     <counter>COMPLEXITY</counter>
-
-
+                                    <value>TOTALCOUNT</value>
+                                    <minimum>0</minimum>
                                 </limit>
                             </limits>
                         </rule>

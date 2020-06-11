@@ -2,10 +2,9 @@ package ru.netology.domain;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class RadioTest {
+public class RadioTest {
 
     Radio radio = new Radio();
 
@@ -22,7 +21,7 @@ class RadioTest {
     public void shouldCurrentNumberStationReturnToMin() {
         radio.setCurrentNumberStation(9);
         radio.increaseCurrentNumberStation();
-        int expected = 0;
+        int expected = 1;
         int actual = radio.getCurrentNumberStation();
         assertEquals(expected, actual);
     }
@@ -40,7 +39,7 @@ class RadioTest {
     public void shouldCurrentNumberStationReturnToMax() {
         radio.setCurrentNumberStation(0);
         radio.decreaseCurrentNumberStation();
-        int expected = 9;
+        int expected = 8;
         int actual = radio.getCurrentNumberStation();
         assertEquals(expected, actual);
     }
